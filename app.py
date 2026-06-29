@@ -57,7 +57,7 @@ st.markdown(
 
 from pathlib import Path
 
-PASTA_IMAGENS = Path(__file__).parent / "imagens2"
+PASTA_IMAGENS = Path(__file__).parent
 
 arquivos = sorted(PASTA_IMAGENS.glob("*.jpg"))
 
