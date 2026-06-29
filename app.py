@@ -59,7 +59,11 @@ from pathlib import Path
 
 PASTA_IMAGENS = Path(__file__).parent
 
-arquivos = sorted(PASTA_IMAGENS.glob("*.jpg"))
+arquivos = sorted(
+    list(PASTA_IMAGENS.glob("*.jpg")) +
+    list(PASTA_IMAGENS.glob("*.jpeg")) +
+    list(PASTA_IMAGENS.glob("*.png"))
+)
 
 st.divider()
 
